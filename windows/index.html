@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./min/main.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <div class="main">
+        <div class="left-pane">
+          <div class="lhs-content">
+            <div
+              class="block-conversion is-active"
+              onclick="handleConversionChange(this)"
+              data-type="dec"
+            >
+              <h2>Dec</h2>
+              <h3 class="changable-t">0</h3>
+            </div>
+            <div
+              class="block-conversion"
+              onclick="handleConversionChange(this)"
+              data-type="hex"
+            >
+              <h2>Hex</h2>
+              <h3 class="changable-t">0</h3>
+            </div>
+            <div
+              class="block-conversion"
+              onclick="handleConversionChange(this)"
+              data-type="oct"
+            >
+              <h2>Oct</h2>
+              <h3 class="changable-t">0</h3>
+            </div>
+            <div
+              class="block-conversion"
+              onclick="handleConversionChange(this)"
+              data-type="bin"
+              style="height: 120px"
+            >
+              <h2>Bin</h2>
+              <h3 class="changable-t">0</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right-pane">
+          <div class="calc-input">
+            <input id="in" class="input-box" placeholder="0" />
+          </div>
+          <div class="down-r-pane">
+            <div class="calc-buttons">
+              <div data-num="1" class="calc-button" onclick="pressBind(1)">
+                1
+              </div>
+              <div data-num="2" class="calc-button" onclick="pressBind(2)">
+                2
+              </div>
+              <div data-num="3" class="calc-button" onclick="pressBind(3)">
+                3
+              </div>
+              <div class="calc-button" onclick="backSpaceBind()">back</div>
+              <div data-num="4" class="calc-button" onclick="pressBind(4)">
+                4
+              </div>
+              <div data-num="5" class="calc-button" onclick="pressBind(5)">
+                5
+              </div>
+              <div data-num="6" class="calc-button" onclick="pressBind(6)">
+                6
+              </div>
+              <div class="calc-button" onclick="clearInput()">C</div>
+              <div data-num="7" class="calc-button" onclick="pressBind(7)">
+                7
+              </div>
+              <div data-num="8" class="calc-button" onclick="pressBind(8)">
+                8
+              </div>
+              <div data-num="9" class="calc-button" onclick="pressBind(9)">
+                9
+              </div>
+              <div data-num="0" class="calc-button" onclick="pressBind(0)">
+                0
+              </div>
+            </div>
+            <div data-disabled="true" class="calc-aux-buttons">
+              <div class="calc-button disabled" onclick="pressBindOfHex('A')">
+                A
+              </div>
+              <div class="calc-button disabled" onclick="pressBindOfHex('B')">
+                B
+              </div>
+              <div class="calc-button disabled" onclick="pressBindOfHex('C')">
+                C
+              </div>
+              <div class="calc-button disabled" onclick="pressBindOfHex('D')">
+                D
+              </div>
+              <div class="calc-button disabled" onclick="pressBindOfHex('E')">
+                E
+              </div>
+              <div class="calc-button disabled" onclick="pressBindOfHex('F')">
+                F
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+nav{
+    /* background-color: #72f2fd; */
+    color: white;
+}
+.link{
+    margin-left: 50px;
+    font-weight: 600;
+    /* background-color: whitesmoke; */
+    color: white;
+    border-radius: 50px;
+    padding: 5px 10px 5px 10px;
+    transition: all 300ms;
+}
+.link:hover{
+    transform: scale(1.1)
+}

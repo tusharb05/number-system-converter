@@ -38,7 +38,7 @@ const Hexadecimal = () => {
                 <input 
                     type="text" 
                     className="form-control hex-input" 
-                    value={hexValue=='NaN' ? '' : hexValue}
+                    value={hexValue==='NaN' ? '' : hexValue}
                     onChange={(e)=>conversion(e.target.value)}
                     aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"/>
             </div>

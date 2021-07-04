@@ -4,6 +4,12 @@
 
 ### Live Demo: https://num-sys-converter.netlify.app/
 
+# Windows Application
+See the source code [here](https://github.com/tusharb05/number-system-converter/tree/main/windows)
+## Download
+Download the installer from [here](https://github.com/tusharb05/number-system-converter/raw/main/windows/downloads/number-system-converter%20Setup%201.0.0.exe) (Fully open source and safe)
+## Preview
+![img](./windows/assets/preview.png)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

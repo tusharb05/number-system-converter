@@ -31,11 +31,12 @@ const init = () => {
     icon: path.join(__dirname, "..", "..", "icons", "app.ico"),
     show: false,
     resizable: false,
+    
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: false,
       preload: path.join(__dirname, "preload.js"),
-      experimentalFeatures: true,
+      devTools: false,
     },
   });
   window.webContents.insertCSS(

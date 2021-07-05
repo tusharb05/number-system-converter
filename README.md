@@ -1,7 +1,5 @@
 # Number System Converter
 
-### An App to help me out with my homework :)
-
 ### Live Demo: https://num-sys-converter.netlify.app/
 
 # Windows Application
